@@ -50,26 +50,18 @@ bool check_state (int x, int y, vector<vector<bool>> board) {
   return false;
 }
 
-int main () {
-  board[2][2] = true;
-  board[3][2] = true;
-  board[2][3] = true;
-  board[3][3] = true;
-  board[3][4] = true;
-
-  for(int i = 0; i < 6; i++) {
-    //update loop
-    for(int i = 0; i < board.size(); i ++){
-      for(int j = 0; j < board[i].size(); j++){
-        cout<<board[i][j];
-        board_next[i][j] = check_state(i, j, board);
-      }
-      cout<<endl;
+void step () {
+  //update loop
+  for(int i = 0; i < board.size(); i ++){
+    for(int j = 0; j < board[i].size(); j++){
+      cout<<board[i][j];
+      board_next[i][j] = check_state(i, j, board);
     }
-
-    //update the board
-    board = board_next;
-    generation ++;
-    cout<<generation<<endl;
+    cout<<endl;
   }
+
+  //update the board
+  board = board_next;
+  generation ++;
+  cout<<generation<<endl;
 }
