@@ -1,6 +1,4 @@
 #include <SDL2/SDL.h>
-#include <string>
-#include "game.cpp"
 #include "game.h"
 
 using namespace std;

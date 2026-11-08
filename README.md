@@ -14,10 +14,14 @@ some example patterns to try at the bottom of this README
 
 # Compilation instructions
 
-run these commands from root:
+run this command from root:
+
+>make build <br>
+
+alternatively,
 
 >cd src <br>
->g++ main.cpp -o cgl -lSDL2
+>g++ main.cpp game.cpp -o cgl -lSDL2
 
 # Fun automata to try
 
