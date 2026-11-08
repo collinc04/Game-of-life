@@ -12,9 +12,6 @@ using namespace std;
  * written by Collin Cook
  */
 
-// Dimensions of the game board
-int generation;
-
 // Create game board and the it's next state
 vector<vector<bool>> board(width, vector<bool>(height, false));
 vector<vector<bool>> board_next(width, vector<bool>(height, false));
@@ -70,14 +67,11 @@ void step () {
   //update loop
   for(int i = 0; i < board.size(); i ++){
     for(int j = 0; j < board[i].size(); j++){
-      //cout<<board[i][j];
       board_next[i][j] = check_state(i, j, board);
     }
-    //cout<<endl;
   }
 
   //update the board
   board = board_next;
-  generation ++;
   //cout<<generation<<endl;
 }
