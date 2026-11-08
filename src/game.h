@@ -3,8 +3,8 @@
 #include <vector>
 
 // make game info global
-inline constexpr int width = 50;
-inline constexpr int height = 50;
+inline constexpr int width = 30;
+inline constexpr int height = 30;
 constexpr int cell_size = 20;
 
 // Game board global to be accessed by gui
