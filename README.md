@@ -21,7 +21,10 @@ run this command from root:
 alternatively,
 
 >cd src <br>
->g++ main.cpp game.cpp -o cgl -lSDL2
+>g++ main.cpp game.cpp -o cgl -lSDL2 <br>
+
+The game can be played by clicking on a square to change it from alive to dead or dead to alive while the game is paused.
+You can pause and unpause with the spacebar
 
 # Fun automata to try
 
