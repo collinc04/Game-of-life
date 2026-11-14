@@ -39,7 +39,7 @@ int main () {
   SDL_Renderer *renderer;
   SDL_Window *window;
   SDL_Init(SDL_INIT_VIDEO);
-  SDL_CreateWindowAndRenderer(width * cell_size, height * cell_size, 0, &window, &renderer);
+  SDL_CreateWindowAndRenderer(height * cell_size, width * cell_size, 0, &window, &renderer);
   SDL_SetWindowTitle(
     window, "Conway's game of life"
   );
